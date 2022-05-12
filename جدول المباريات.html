@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset="uft-8">
-    <link rel="stylesheet" href="karim.css">
-    
-<header id="h1">جدول مباريات اليوم</header>
-<body>
-    
-<header>
-    <a href="#" class="logo">سَنتر</a>
-    <div class="parts">
-        <a href="#" class="page-1">الصفحة الرئيسية</a>
-        <a href="#" class="page-1">أخبار</a>
-        <a href="#" class="page-1">مباريات</a>
-        <a href="#" class="page-1">فيديوهات</a>
-        <a href="#" class="page-1">صور</a>
-        <a href="#" class="page-1">إحصائيات</a>
-    </div>
-    <nav>
-        <a href="#">
-            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-        </a>
-        <input type="search" placeholder="  Search" class="search">
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
-        </div>
-    </nav>
-    <a href="#" class="login">login</a>
-</header>
+    <link rel="stylesheet" href="css/karim.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<!--     
+ <header id="h1">
+     جدول مباريات اليوم
+ </header>  --></head>
+<main>
+    <!-- <header id="h1">جدول مباريات اليوم</header> -->
+    <header>
+        <img src="images/soccer-player - Copy.png" alt="" class="logo-img">
+        <a href="index.html" class="logo">سَنتر</a>
+        <div class="parts">
+            <a href="index.html" class="page-1">الصفحة الرئيسية</a>
+            <a href="premium league-caf.html" class="page-1">أخبار</a>
+            <a href="جدول المباريات.html" class="page-1">مباريات</a>
+            <div class="dropdown-1">
+                <span>فيديوهات</span>
+                <div class="dropdown-content-1">
+                <a href="الدوري المصري.html">بلاي ليست</a>
+                <a href="دوري ابطال اوروبا.html">عادي</a>
+                </div>
+            </div>
 
-<aside>
-    <ul>
-        <li><a href="#">دوري أبطال أوروبا</a></li>
-        <li><a href="#">دوري أبطال أفريقيا</a></li>
-        <li><a href="#">الدوري المصري</a></li>
-        <li><a href="#">أندية</a></li>
-        <li><a href="#">لاعبون</a></li>
-        <li><a href="#">بطولات أخري</a></li>
-    </ul>
-</aside>
-<div class="bg"></div>
+            <div class="dropdown-2">
+                <span>إحصائيات</span>
+                <div class="dropdown-content-2">
+                <a href="ucl.html">دوري أبطال أوروبا</a>
+                <a href="/aul.html">دوري أبطال أفريقيا</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <input  list="search" placeholder="  Search" id="search">
+            
+            <datalist id="search">
+                <option value="الأخبار">
+                <option value="مباريات">
+                <option value="فيديوهات">
+                <option value="دوري أبطال أوروبا">
+                <option value="دوري أبطال أفريقيا">
+                <option value="كأس العالم">
+            </datalist>
+
+        </nav>
+        <a href="signup.html" class="sign-up">إشتراك</a>
+        <a href="login.html" class="login">تسجيل دخول</a>
+    </header>
+
+    <aside>
+        <ul>
+            <li><a href="chlmain.html">دوري أبطال أوروبا</a></li>
+            <li><a href="cafmain.html">دوري أبطال أفريقيا</a></li>
+            <li><a href="Worldcupp.html">كأس العالم</a></li>                
+            <li><a href="feedback.html">feedback</a></li>
+            <li><a href="profile.html">profile</a></li>
+
+        </ul>
+    </aside>
+
 
     <span class="te">دورى ابطال اوروبا</span>
     <div class="tt">التاريخ 18/9/2021</div>
@@ -52,12 +74,12 @@
 <div class="rr">
     ريال مدريد
 </div>
-
+<img src="images/50051.png" class="py">
 
 <div class="gg">
-    برشلونة
+    مانشستر يونايتد
 </div>
-
+<img src="images/52682.png" class="mk">
 <div class="ee">
    <pre>       0     -     0       </pre>
 </div>
@@ -69,13 +91,14 @@
     </span>
 
 </div> 
-<hr>
+
 <div class="oo">
 <div class="h2">مانشستر سيتى
-  
+  <img src="images/52919.png" class="xx">
 </div>
 
-<div class="h3">مانشستر يونايتد</div>
+<div class="h3">بورتو</div>
+<img src="images/50064.png" class="aa">
 
 <div class="h4"> 
   <pre>  2     -     0  </pre> 
@@ -89,12 +112,12 @@
 
 </div>
 
-<hr>
+
 <div class="kk">
 <div class="p1">ليفربول</div>
-
+<img src="images/7889.png" class="xs">
 <div class="p2">باريس سان جيرمان</div>
-
+<img src="images/52747.png" class="vc">
 <div class="p3">
     <pre>2     -     1</pre>
 </div>
@@ -107,17 +130,18 @@ bein sports 1hd
 
 </div>
  
-  <hr>
+  
 <span class="wc">دورى ابطال افريقيا --دور المجموعات </span>
 <div class="zz">
 <div class="pp" >
 الترجى التونسى 
 </div>
-
+<img src="images/EST.png" class="cv">
 
 <div class="aa">
 الوداد البيضاوى
 </div>
+<img src="images/WAC.png" class="dy">
 <div class="ka">
     تبدا قريبا
 </div>
@@ -134,15 +158,17 @@ bein sports 4
     عصام الشوالى
 </div>
 </div>
-<hr>
+
 
 <div class="we">
 <div class="io">
     الاهلى المصرى
 </div>
+<img src="images/ASC.png" class="lg">
 <div class="ty">
-    الرجاء البيضاوى
+    وفاق سطيف
 </div>
+<img src="images/ENS.png" class="wm">
 <div class="pl">
     9.30 pm
 </div>
@@ -162,14 +188,16 @@ bein sports 4
 </div> 
 
 </div>
-<hr>
+
 <div class="hd">
 <div class="you">
-صن داونز
+بترو اتليتكو
 </div>
+<img src="images/apl.png" class="eb">
 <div class="se">
     مازيمبى
 </div>
+<img src="images/TPM.png" class="do">
 <div class="bin">
     لم تبدا بعد
 </div>
@@ -186,22 +214,23 @@ bein sports 4
     حفيظ دراجى
 </div>
 </div>
-<hr>
-<div class="tea">
-    جدول مباريات الغد
-</div>
 
+<p class="tea">
+    جدول مباريات الغد
+</p>
 <span class="pik">
     الدورى المصرى
 </span>
-<div class="jo">التاريخ 19/9/2021</div>
+<div class="jo">التاريخ 19/9/2021</div> 
 <div class="red">
 <div class="saw">
     المقاولون العرب
 </div>
+<img src="images/Ra_Fuh-xdYTK41_UUigPVA_48x48 - Copy.png" class="yb">
 <div class="raw">
     بيراميدز
 </div>
+<img src="images/_880UCbaux4wc8GngA9SLw_48x48.png" class="ct">
 <div class="dar">
     7.30 pm
 </div>
@@ -218,19 +247,21 @@ on time sports 1
     بلال علام
 </div>
 </div>
-<hr>
+
 <div class="egy">
 <div class="tv">
     غزل المحلة
 </div>
+<img src="images/vrt.png" class="bd">
 <div class="bv">
     الاسماعيلى
 </div>
+<img src="images/www.png" class="ph">
 <div class="dc">
     5.00 pm
 </div>
 <div class="xo">
-   (مؤجل) الجولة الحادية عشر 
+     الجولة الحادية عشر
 </div>
 <div class="xp">
     on time sports 2
@@ -261,29 +292,11 @@ on time sports 1
 
 
 
-</body>
+</main>
 
 
 
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</head>
     </body>
     </html>
 

@@ -8,40 +8,59 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">    <title>Document</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">            
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">         
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
+            <img src="images/soccer-player - Copy.png" alt="" class="logo-img">
             <a href="index.html" class="logo">سَنتر</a>
             <div class="parts">
                 <a href="index.html" class="page-1">الصفحة الرئيسية</a>
-                <a href="الأخبار.html" class="page-1">أخبار</a>
+                <a href="premium league-caf.html" class="page-1">أخبار</a>
                 <a href="جدول المباريات.html" class="page-1">مباريات</a>
-                <a href="الدوري المصري .html" class="page-1">فيديوهات</a>
-                <a href="images.html" class="page-1">صور</a>
-                <a href="احصائيات.html" class="page-1">إحصائيات</a>
+                <div class="dropdown-1">
+                    <span>فيديوهات</span>
+                    <div class="dropdown-content-1">
+                    <a href="الدوري المصري.html">بلاي ليست</a>
+                    <a href="دوري ابطال اوروبا.html">عادي</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-2">
+                    <span>إحصائيات</span>
+                    <div class="dropdown-content-2">
+                    <a href="ucl.html">دوري أبطال أوروبا</a>
+                    <a href="/aul.html">دوري أبطال أفريقيا</a>
+                    </div>
+                </div>
+
             </div>
             <nav>
-                <a href="#"><i class="fa-solid fa-magnifying-glass" id="search-btn"></i></a>
-                <input type="text" placeholder="  Search" class="search">
-                <div class="social-icons">
-                    <!-- <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a> -->
-                    <a href="portopholio.html" class="sign-up">Sign up</a>
-                </div>
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                <input  list="search" placeholder="  Search" id="search">
+                
+                <datalist id="search">
+                    <option value="الأخبار">
+                    <option value="مباريات">
+                    <option value="فيديوهات">
+                    <option value="دوري أبطال أوروبا">
+                    <option value="دوري أبطال أفريقيا">
+                    <option value="كأس العالم">
+                </datalist>
+
             </nav>
-            <a href="login.html" class="login">login</a>
+            <a href="signup.html" class="sign-up">إشتراك</a>
+            <a href="login.html" class="login">تسجيل دخول</a>
         </header>
 
         <aside>
             <ul>
-                <li><a href="أوروبا.html">دوري أبطال أوروبا</a></li>
-                <li><a href="Africa.html">دوري أبطال أفريقيا</a></li>
-                <li><a href="egyptian.html">الدوري المصري</a></li>
-                <li><a href="clubs.html">أندية</a></li>
+                <li><a href="chlmain.html">دوري أبطال أوروبا</a></li>
+                <li><a href="cafmain.html">دوري أبطال أفريقيا</a></li>
                 <li><a href="Worldcupp.html">كأس العالم</a></li>                
                 <li><a href="feedback.html">feedback</a></li>
                 <li><a href="profile.html">profile</a></li>
@@ -60,20 +79,52 @@
                 <div class="back">
                     <button><</button>                
                 </div>
+
+
                 <div class="match-1">
-                    <h5>الدوري المصري</h5>
+                    <h5>دوري أبطال أوروبا</h5>
                     <div class="man-unt">
                         <img src="images/man utd.png" alt="">
                         <span class="man-unt-name">مانشستر<br>يونايتد</span>
                     </div>
                     <div class="score-1">
-                        <p>0 5</p>
+                        <p>0 0</p>
                     </div>
                     <span class="panc-1">إنتهت</span>
                     <div class="lever">
-                        <img src="images/leverpool.jpg" alt="">
-                        <span class="lever-name">ليفربول</span>
+                        <img src="images/50051.png" alt="">
+                        <span class="lever-name">ريال مدريد</span>
                     </div>
+                </div>
+
+
+                <div class="match-2">
+                    <h5>دوري أبطال أوروبا</h5>
+                    <div class="man-unt">
+                        <img src="images/50064.png" alt="">
+                        <span class="borto">بورتو</span>
+                    </div>
+                    <div class="score-1">
+                        <p>0 2</p>
+                    </div>
+                    <span class="panc-1">إنتهت</span>
+                    <div class="lever">
+                        <img src="images/52919.png" alt="" class="man-cty">
+                        <span class="lever-name">مانشستر ستي</span>
+                </div>
+                <div class="match-2">
+                    <h5>دوري أبطال أوروبا</h5>
+                    <div class="man-unt">
+                        <img src="images/52747.png" alt="">
+                        <span class="paris-name">باريس سان جيرمان</span>
+                    </div>
+                    <div class="score-1">
+                        <p>2 2</p>
+                    </div>
+                    <span class="panc-1">إنتهت</span>
+                    <div class="lever">
+                        <img src="images/leverpool.jpg" alt="" class="leverpoollogo">
+                        <span class="leverpool">ليفربول</span>
                 </div>
                 <div class="match-2">
                     <h5>الدوري المصري</h5>
@@ -89,66 +140,6 @@
                         <img src="images/leverpool.jpg" alt="">
                         <span class="lever-name">ليفربول</span>
                 </div>
-
-
-
-
-
-
-
-                <div class="match-2">
-                    <h5>الدوري المصري</h5>
-                    <div class="man-unt">
-                        <img src="images/man utd.png" alt="">
-                        <span class="man-unt-name">مانشستر<br>يونايتد</span>
-                    </div>
-                    <div class="score-1">
-                        <p>0 5</p>
-                    </div>
-                    <span class="panc-1">إنتهت</span>
-                    <div class="lever">
-                        <img src="images/leverpool.jpg" alt="">
-                        <span class="lever-name">ليفربول</span>
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <div class="match-2">
-                    <h5>الدوري المصري</h5>
-                    <div class="man-unt">
-                        <img src="images/man utd.png" alt="">
-                        <span class="man-unt-name">مانشستر<br>يونايتد</span>
-                    </div>
-                    <div class="score-1">
-                        <p>0 5</p>
-                    </div>
-                    <span class="panc-1">إنتهت</span>
-                    <div class="lever">
-                        <img src="images/leverpool.jpg" alt="">
-                        <span class="lever-name">ليفربول</span>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="match-2">
                     <h5>الدوري المصري</h5>
                     <div class="man-unt">
@@ -167,12 +158,218 @@
                     <button>></button>                
                 </div>
             </div>
-            <section class="news">
-                <!-- <h1>الأخبار</h1> -->
-                <div class="details">
-                    
+        </div>   
+        <div class="about">
+            <h3>contact us</h3>
+            <ul class="cards">
+                
+                <div class="card-1">
+                    <li >
+                        <img src="images/mohamedhanafy i.jpg" alt="">
+                        <p>Mohamed Hanafy Ismael</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
                 </div>
-            </section>
-    </body>
 
+
+                <div class="card-2">
+                    <li>                    
+                        <img src="images/kareem ayman.jpg" alt="">
+                        <p>Kareem Ayman</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="card-3">
+                    <li>                    
+                        <img src="images/abdel khalek.jpg" alt="">
+                        <p>Mohamed Abdel Khalek</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/philo.jpeg" alt="">
+                        <p>Philopeter Ezzat</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+                
+                
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/fam.png" alt="">
+                        <p>Fam Fayez</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+                
+                
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/mohamedhanafy H.jpg" alt="">
+                        <p>Mohamed Hanafy Hussain</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+                
+                
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/kareen yonis.jpg" alt="">
+                        <p>kareen yonis</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+                
+                
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/abo bakr.jpg" alt="">
+                        <p>Mohamed Abo-bakr</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+                
+
+                <div class="card-4">
+                    <li>                    
+                        <img src="images/kareem emam.jpg" alt="">
+                        
+                        <p>Kareem Emam</p>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        
+        <div class="news">
+            <span></span>
+            <h2>أهم الأخبار</h2>
+            <a href="premium league-caf.html">< المزيد</a>
+            <ul class="news-cards">
+                
+                
+                <div>
+                    <li>
+                        <a href="/mosalahcareer.html"><img src="images/mohamed salah.jpg" alt=""></a>
+                        <p class="news-1">أهم أرقام محمد صلاح مع ليفربول فى دوري أبطال أوروبا!!</p>
+                    </li>
+                </div>
+
+
+                <div>
+                    <li>
+                        <img src="images/wafak.jpg" alt="">
+                        <p class="news-2">قائمة الأهلي لمباراة وفاق سطيف في دوري أبطال إفريقيا.. عودة ديانج وغياب السولية</p>
+                    </li>
+                </div>
+
+
+                <div>
+                    <li>
+                        <img src="images/premium league.jpg" alt="">
+                        <p class="news-3">موعد نهائي دوري أبطال أوروبا 2022   !!</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+
+        <div class="world-cup">
+            <a href="Worldcupp.html"><img src="images/world-cup-mp.png" alt=""></a>
+            <a href="Worldcupp.html">كأس العالم 2018</a>
+        </div>
+
+
+        <div class="champions">
+            <a href="chlmain.html"><img src="images/champions legeu.jpg" alt="" class="ch-l"></a>
+            <a href="chlmain.html">دوري أبطال أوروبا</a>
+        </div>
+
+
+        <div class="champions-2">
+            <a href="/cafmain.html"><img src="images/caf-logo.png" alt="" class="ch-l"></a>
+            <a href="#">دوري أبطال أفريقيا</a>
+        </div>
+
+
+        <div class="feedback-container">
+            <a href="feedback.html"><img src="images/feedback.png" alt="" class="ch-l"></a>
+            <a href="feedback.html">رأيك يهمنا</a>
+        </div>
+
+
+        <div class="madrids">
+            <span class="side"></span>
+            <h2>مدريديستا</h2>
+            <img src="images/download23.jpg" alt="" class="real-logo">
+            <span class="title">ريال مدريد</span>
+            <p class="content-1-r">ريال مدريد هو فريق كرة قدم محترف إسباني أُسس عام 1902، مقره العاصمة الإسبانية مدريد. يلعب الفريق في الدوري الإسباني واختير كأفضل فريق كرة قدم في القرن العشرين، وقد فاز بالدوري الإسباني 35 مرة، وتسعة عشر مرة بكأس ملك إسبانيا وأحرز رقمًا قياسيًا بحيازته 13 بطولة في دوري أبطال أوروبا</p>
+            <p class="content-2-r">بسبب أهمية الفريق علي مستوي العالم وشعبيته الواسعة قمنا بتخصيص جزء من وقتنا لجمع معلومات تاريخية عنه ومتابعة آخر تحديثاته بالدوري بطولاته.</p>
+            <a href="realmadrid-session.html" class="real-choose-1">الموسم الحالي</a>
+            <a href="real.html" class="real-choose-2">تاريخ النادي</a>
+        </div>
+
+
+        <div class="ahly">
+            <span class="side"></span>
+            <h2>أهلاوي</h2>
+            <img src="images/ahky-logo.webp" alt="" class="real-logo">
+            <span class="title">الأهلي </span>
+            <p class="content-1-a">النَّادِي الأَهْلِي لِلْرِّيَاضَةِ البَدَنِيَة أو كَما يُعرف اختصارًا بِاسم النَّادِي الأَهْلِي، هو نادٍ رياضي مصري محترف يلعب في الدوري المصري الممتاز، ومقره في القاهرة، وهو النادي الوحيد في مصر بجانب نادي الزمالك الذي لم يهبط إلى دوري الدرجة الثانية.</p>
+            <p class="content-2-a">ولعراقة النادي وكونه أكثر الأندية تتويدا بالبطولات القارية علي مستوي العالم فكان يجب الإهتمام بتاريخه الماضي وحاضره.</p>
+            <a href="bakr11.html" class="ahly-choose-1">الموسم الحالي</a>
+            <a href="bakrr22.html" class="ahly-choose-2">تاريخ النادي</a>
+        </div>
+    </body>
 </html>

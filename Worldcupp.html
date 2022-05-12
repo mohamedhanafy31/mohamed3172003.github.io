@@ -13,54 +13,70 @@
 
     <body>
         <header>
-            <a href="#" class="logo">سَنتر</a>
+            <img src="images/soccer-player - Copy.png" alt="" class="logo-img">
+            <a href="index.html" class="logo">سَنتر</a>
             <div class="parts">
-                <a href="#" class="page-1">الصفحة الرئيسية</a>
-                <a href="#" class="page-1">أخبار</a>
-                <a href="#" class="page-1">مباريات</a>
-                <a href="#" class="page-1">فيديوهات</a>
-                <a href="#" class="page-1">صور</a>
-                <a href="#" class="page-1">إحصائيات</a>
+                <a href="index.html" class="page-1">الصفحة الرئيسية</a>
+                <a href="premium league-caf.html" class="page-1">أخبار</a>
+                <a href="جدول المباريات.html" class="page-1">مباريات</a>
+                <div class="dropdown-1">
+                    <span>فيديوهات</span>
+                    <div class="dropdown-content-1">
+                    <a href="الدوري المصري.html">بلاي ليست</a>
+                    <a href="دوري ابطال اوروبا.html">عادي</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-2">
+                    <span>إحصائيات</span>
+                    <div class="dropdown-content-2">
+                    <a href="ucl.html">دوري أبطال أوروبا</a>
+                    <a href="/aul.html">دوري أبطال أفريقيا</a>
+                    </div>
+                </div>
             </div>
             <nav>
-                <a href="#">
-                    <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-                </a>
-                <input type="text" placeholder="  Search" class="search">
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram-square" id="insta"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter-square" id="twit"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube" id="yt"></i> </a>
-                </div>
+                <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+                <input  list="search" placeholder="  Search" id="search">
+                
+                <datalist id="search">
+                    <option value="الأخبار">
+                    <option value="مباريات">
+                    <option value="فيديوهات">
+                    <option value="دوري أبطال أوروبا">
+                    <option value="دوري أبطال أفريقيا">
+                    <option value="كأس العالم">
+                </datalist>
+
             </nav>
-            <a href="#" class="login">login</a>
+            <a href="signup.html" class="sign-up">إشتراك</a>
+            <a href="login.html" class="login">تسجيل دخول</a>
         </header>
 
         <aside>
             <ul>
-                <li><a href="#">دوري أبطال أوروبا</a></li>
-                <li><a href="#">دوري أبطال أفريقيا</a></li>
-                <li><a href="#">الدوري المصري</a></li>
-                <li><a href="#">أندية</a></li>
-                <li><a href="#">لاعبون</a></li>
-                <li><a href="#">بطولات أخري</a></li>
+                <li><a href="chlmain.html">دوري أبطال أوروبا</a></li>
+                <li><a href="cafmain.html">دوري أبطال أفريقيا</a></li>
+                <li><a href="Worldcupp.html">كأس العالم</a></li>                
+                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="profile.html">profile</a></li>
+
             </ul>
         </aside>
+        <div class="title-logo">
+           
+        </div>
         
         <div class="titlee">
-            <h1 class="world-cup"> بطولة كأس العالم </h1>
-            <h3 class="v18">&quot;نسخة 2018 &quot;</h3>
-            <a href="https://www.fifa.com/tournaments/mens/worldcup/qatar2022" target="_blank"><img src="wc-trophy.png" class="trophy" alt="World cup trophy"></a>
+            <img src="images/titlee.png" class="title-photo"
+            <!-- <h1 class="world-cup"> بطولة كأس العالم </h1>
+            <h3 class="v18">&quot;نسخة 2018 &quot;</h3> -->
+
+            <a href="https://www.fifa.com/tournaments/mens/worldcup/qatar2022" target="_blank"><img src="images/wc-trophy.png" class="trophy" alt="World cup trophy"></a>
         </div>
-        <!-- <aside class="sidee">
-            <div class="side-bar">
-                
-            </aside>
-        </div> -->
 
         <div class="all">
-        <div class="harry-kean">
+        <div class="harry-kean"  id="topScorer">
             <h2 class="top-scorer">هداف البطولة</h2>
             <article class="harry-p">
                  <p><span class="harry"> هاري كين </span> هو هداف كأس العالم ب 6 أهداف و ساهم في وصول منتخب بلاده للدور نصف النهائي ..
@@ -68,13 +84,13 @@
                 كين هو أسوأ هداف في تاريخ كأس العالم حيث أنه أحرز 3 أهداف من أصل 6 عن طريق ضربات جزاء  </p>
    
             <a href="https://ar.wikipedia.org/wiki/%D9%87%D8%A7%D8%B1%D9%8A_%D9%83%D9%8A%D9%86" target="_blank">
-                <img src="Harry-Kane.png" alt="هاري كين" class="trans-kane">
+                <img src="images/Harry-Kane.png" alt="هاري كين" class="trans-kane">
             </a>
             <h3>شاهد أهداف هاري كين أمام : </h3>
             <div class="flags">
-                <a href="https://www.youtube.com/watch?v=u3wfrhjoIJg" target="_blank"><img src="TUNISIA.png" alt="تونس" class="tunisia"> </a>
-                <a href="https://www.youtube.com/watch?v=kPAIcIBtCtE" target="_blank"><img src="PANAMA.png" alt="بنما" class="panama"> </a>
-                <a href="https://www.youtube.com/watch?v=RbmaLT320hw" target="_blank"><img src="COLOMBIA.png" alt="كولومبيا" class="colombia"></a>                
+                <a href="https://www.youtube.com/watch?v=u3wfrhjoIJg" target="_blank"><img src="images/TUNISIA.png" alt="تونس" class="tunisia"> </a>
+                <a href="https://www.youtube.com/watch?v=kPAIcIBtCtE" target="_blank"><img src="images/PANAMA.png" alt="بنما" class="panama"> </a>
+                <a href="https://www.youtube.com/watch?v=RbmaLT320hw" target="_blank"><img src="images/COLOMBIA.png" alt="كولومبيا" class="colombia"></a>                
             </div>
             <div class="small-titles">
                 <h4 class="pan">بنما</h4>
@@ -84,8 +100,8 @@
             </article>
             <br>
             <hr>
-            <div class="best-player">
-                <h2 class="best-playerrrh">أفضل لاعب في البطولة</h2>
+            <div class="best-player" id="bestPLayer">
+                <h2 class="best-playerrrh" >أفضل لاعب في البطولة</h2>
                 <article class="luka-modric">
                     <p class="luka"><span class="modric"> لوكا مودريتش </span> هو أفضل لاعب في البطولة بعد أن أوصل كرواتيا للمرة
                         الأولي في تاريخها الي نهائي كأس العالم .. حيث أحرز هدف في أول مباراة ضد نيجيريا و في ثاني مباراة يحرز هدف مهم ضد الأرجنتين
@@ -93,12 +109,12 @@
                     لا ننسي دور موريتش في بناء الهجمات و صناعة الفرص و التمريرات المفتاحية
                  </p>
                  <a href="https://ar.wikipedia.org/wiki/%D9%84%D9%88%D9%83%D8%A7_%D9%85%D9%88%D8%AF%D8%B1%D9%8A%D8%AA%D8%B4" target="_blank">
-                    <img src="modric.png" class="mod-photo" alt="مودريتش">
+                    <img src="images/modric.png" class="mod-photo" alt="مودريتش">
                  </a>
                  <h3>شاهد هدف لوكا مودريتش أمام :</h3>
                  <a href="https://www.youtube.com/watch?v=rN_q1AD_Hwg" target="_blank">
                      <!-- <img src="argantin.png" alt="الأرجنتين" class="argantin"> -->
-                     <img src="Flag-Argentina.jpg" alt="الأرجنتين" class="argantin">
+                     <img src="images/Flag-Argentina.jpg" alt="الأرجنتين" class="argantin">
                  </a>
                  <h4 class="argan">الأرجنتين</h4>
                  <a href="https://www.youtube.com/watch?v=awx0reipQ8k" target="_blank" class="linkk">ملخص ما قدمه مودريتش في البطولة</a>
@@ -107,8 +123,8 @@
             </div> 
             <br>
             <hr>
-            <div class="best-gk">
-                <h2 class="gk">أفضل حارس مرمي في البطولة</h2>
+            <div class="best-gk" id="gK">
+                <h2 class="gk" >أفضل حارس مرمي في البطولة</h2>
                 <article class="cortoa">
                     <p>
                 <span> كورتوا  </span>
@@ -117,7 +133,7 @@
 ولعب كورتوا دورًا كبيرًا في حصول منتخب بلجيكا للمرة الاولى في التاريخ على المركز الثالث والميدالية البرونزية في بطولة كأس العالم
                     </p>
                     <a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%8A%D8%A8%D9%88_%D9%83%D9%88%D8%B1%D8%AA%D9%88%D8%A7" target="_blank">
-                        <img src="cortoa.png" alt="كورتوا" class="cort-photo">
+                        <img src="images/cortoa.png" alt="كورتوا" class="cort-photo">
                     </a>
                     <a href="https://www.youtube.com/watch?v=fJkBMrtNTn0" target="_blank" class="gk-link">
                         ملخص ما قدمه كورتوا في البطولة
@@ -126,7 +142,7 @@
             </div>
             <br>
             <hr>
-            <div class="young-pl">
+            <div class="young-pl"  id="younG">
                 <h2 class="best-young">أفضل لاعب شاب في البطولة</h2>
                 <article class="mbabbe">
                     <p>
@@ -136,11 +152,11 @@
                         يصنعها له جيرو و يلعب جناح أيمن و و أيسر و رأس حربة .. أحرز 4 أهداف في كأس العالم
                     </p>
                     <a href="https://ar.wikipedia.org/wiki/%D9%83%D9%8A%D9%84%D9%8A%D8%A7%D9%86_%D9%85%D8%A8%D8%A7%D8%A8%D9%8A" target="_blank">
-                        <img src="kylian-mbappe.png" alt="كيليان مبابي" class="kylian-wiki">
+                        <img src="images/kylian-mbappe.png" alt="كيليان مبابي" class="kylian-wiki">
                     </a>
                     <h3>شاهد أهداف المنتخب الفرنسي في البطولة :</h3>
                     <a href="https://www.youtube.com/watch?v=4CxBahfrabk" target="_blank">
-                        <img src="french.png" alt="منتخب فرنسا" class="france">
+                        <img src="images/french.png" alt="منتخب فرنسا" class="france">
                     </a>
                     <a href="https://www.youtube.com/watch?v=6P_xytOyC_A" target="_blank" class="mbabbe-goals">
                         ملخص ما قدمه كيليان مبابي في البطولة
@@ -149,11 +165,88 @@
             </div>
             <br>
             <hr>
-        </div>
-
-   
+            <div class="side-barr">
+                <h4>أهم أحداث كأس العالم</h4>
                 
-               
-
+                    <a href="#topScorer"><i class="fa fa-soccer-ball-o"></i>هداف كأس العالم</a></h4>
+                    <a href="#bestPLayer"><i class="fa fa-soccer-ball-o"></i>أفضل لاعب في كأس العالم</a>
+                   <a href="#gK"><i class="fa fa-soccer-ball-o"></i>أفضل حارس في كأس العالم</a>
+                   <a href="#younG" class="young-link"><i class="fa fa-soccer-ball-o"></i>أفضل لاعب شاب في كأس العالم</a>
+                   <a href="#best111" class="worldXI">أفضل تشكيلة في كأس العالم</a>
+                   <a href="#best-goal-worldcup" class="bestG">أفضل هدف في كأس العالم</a>
+                   <a href="#egyWC" >مصر في كأس العالم</a>
+            </div>
+            <div class="besttt-11" id="bestFormation">
+                <h2 class="top-11">أفضل تشكيلة في البطولة</h2>
+                <article class="best-11" id="best111">
+                    <a href="https://ar.wikipedia.org/wiki/%D8%AA%D9%8A%D8%A8%D9%88_%D9%83%D9%88%D8%B1%D8%AA%D9%88%D8%A7" target="_blank" class="CORTOAA">كورتوا</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D8%B5%D8%A7%D9%85%D9%88%D9%8A%D9%84_%D8%A3%D9%88%D9%85%D8%AA%D9%8A%D8%AA%D9%8A" target="_blank" class="UMTITI">اومتيتي</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%81%D9%8A%D9%86%D8%B3%D9%86%D8%AA_%D9%83%D9%88%D9%85%D8%A8%D8%A7%D9%86%D9%8A" target="_blank" class="KOMPANY">كومباني</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%8A%D8%A7%D9%86_%D9%81%D9%8A%D8%B1%D8%AA%D9%88%D9%86%D8%BA%D9%86" target="_blank" class="VERTONGEN">فيرتونغين</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D8%A8%D9%86%D8%AC%D8%A7%D9%85%D9%8A%D9%86_%D8%A8%D8%A7%D9%81%D8%A7%D8%B1" target="_blank" class="PAVARD">بافارد</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%83%D9%8A%D9%81%D9%8A%D9%86_%D8%AF%D9%8A_%D8%A8%D8%B1%D9%88%D9%8A%D9%86" target="_blank" class="DEBRUYNE">دي بروين</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%86%D8%BA%D9%88%D9%84%D9%88_%D9%83%D8%A7%D9%86%D8%AA%D9%8A" target="_blank" class="KANTE">كانتي</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%84%D9%88%D9%83%D8%A7_%D9%85%D9%88%D8%AF%D8%B1%D9%8A%D8%AA%D8%B4" target="_blank" class="MODRIC">مودريتش</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D9%83%D9%8A%D9%84%D9%8A%D8%A7%D9%86_%D9%85%D8%A8%D8%A7%D8%A8%D9%8A" target="_blank" class="MBAPPE">مبابي</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D8%A5%D9%8A%D9%81%D8%A7%D9%86_%D8%A8%D9%8A%D8%B1%D9%8A%D8%B4%D9%8A%D8%AA%D8%B4" target="_blank" class="PERSIC">برسيتش</a>
+                    <a href="https://ar.wikipedia.org/wiki/%D8%A5%D8%AF%D9%8A%D9%86_%D9%87%D8%A7%D8%B2%D8%A7%D8%B1%D8%AF" target="_blank" class="HAZARD">هازارد</a>
+                </article>
+            </div>
+            <br>
+            <hr>
+            <div class="best-goal">
+                <h2 class="PAVARD-GOAL" id="best-goal-worldcup">أفضل هدف في البطولة</h2>
+                <article class="pavardGoal">
+                    <p>
+                    هدف <span class="pav"> بافارد </span> أمام منتخب الأرجنتين كان أفضل هدف في البطولة و من لا يتذكر هذا الهدف التاريخي من كرة صعبة علي الطائر لتسكن الشباك بتسديدة صاروخية ليحصل بينامين بافارد الظهير الأيمن لمنتخب فرنسا على جائزة أفضل هدف فى بطولة كأس العالم روسيا 2018 التى توج بها الديوك بعد الفوز على كرواتيا بأربعة أهداف مقابل هدفين 15
+                    </p>
+                    <br>
+                    <a href="https://ar.wikipedia.org/wiki/%D8%A8%D9%86%D8%AC%D8%A7%D9%85%D9%8A%D9%86_%D8%A8%D8%A7%D9%81%D8%A7%D8%B1" target="_blank">
+                        <img src="images/pavard.png" class="pavard-bestGOAL" alt="بافارد">
+                    </a>
+                    <h4>شاهد هدف بافارد أمام :</h4>
+                    <a href="https://www.youtube.com/watch?v=Ov39iGAgEn4" target="_blank">
+                        <img src="images/Flag-Argentina.jpg" alt="الأرجنتين" class="argantin2">
+                    </a>
+                    <h4 class="argan2">الأرجنتين</h4>
+                    <!-- <iframe src="https://www.goal.com/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9/x40nfhpeuefw1p4g7xqvicd3j" class="frames" width="600" height="300"></iframe> -->
+                </article>
+            </div>
+            <br>
+            <hr>
+            <div class="egypt">
+                <h2 class="egyptwc" id="egyWC"> مصر في كأس العالم</h2>
+                <article class="EGY-WORLDCUP">
+                    <p>
+                        مصر شاركت في كأس العالم للمرة الأولي منذ 28 عام غابت عن 6 بطولات كأس عالم منذ عام 1990 و لكنها كانت مشاركة مخيبة للآمال 
+                        فقد هزمت في 3 مباريات متتالية و لم تحقق أي فوز 
+                        خسرت مصر أمام الأوروغواى في الدقيقة 90 ثم خسرت 3–1 أمام روسيا وسجل الهدف محمد صلاح من ضربة جزاء
+                         وفي المباراة الاخيرة ضد السعودية خسرت مصر 2–1 وسجل الهدف محمد صلاح في الدقيقة 22.
+                    </p>
+                    <br>
+                    <iframe src="https://www.goal.com/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8-%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9/x40nfhpeuefw1p4g7xqvicd3j" 
+                        class="frames" width="600" height="400"></iframe>
+                        <br>
+                    <h4 class="egyvs"> شاهد ملخص مباريات مصر ضد :</h4>
+                    <a href="https://www.youtube.com/watch?v=AygUlfmQgBs" target="_blank">
+                        <img src="images/russia.png" class="russia" alt="روسيا">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=LPzZa-Btx6I" target="_blank">
+                        <img src="images/uruguay.png" class="uruguay" alt="أوروجواي">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=lEzuFPeSBcA" target="_blank">
+                        <img src="images/saudi.png" class="saudi" alt="السعودية">
+                    </a>
+                    <h5 class="urug">أوروجواي</h5>
+                    <h5 class="russ">روسيا</h5>
+                    <h5 class="arab">السعودية</h5>
+                </article>
+            </div>
+            <br>
+        </div>
+        <footer>
+            <center><h4><span style="color: black;">&copy;</span> سنتر</h4></center>
+            <img src="images/soccer-player - Copy.png">
+        </footer>
 </body>
 </html>

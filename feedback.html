@@ -1,132 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css_feedback/fb.css">
-    <link rel="stylesheet" href="/js_feedback/feedback.js">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/fb.css">
+    <title>Feedback</title>
+    <script src="js/feedback.js"></script>
 </head>
 
-<body>
-    <p>here at Local it is our duty to serve you, the customer, and we take your feedback very seriously. Whether
-        negative or
-        positive, please let us know about your experience</p>
+<body id="body">
+
+
+
+    <button class="mode" id="mode5" onclick="darkmode()">change mode</button>
+    <button class="mode2" id="mode6" onclick="defult()">change mode</button>
+
     <section class="main">
-        <div class="profile_name">
-            <label for="name">الاسم الاول </label>
-            <input id="name" class="name" type="text" required placeholder="Mohmmed">
-
-            <label for="last_name"> الاسم الاخير</label>
-            <input id="last_name" class="lname" type="text" placeholder="Ahmed">
 
 
-            <label for="email"> E-mail</label>
-            <input id="email" class="email" type="email" required placeholder="dark@gmail.com">
+        <div class="text1" id="text">
+
+            Feedback
         </div>
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
+        <form action="#">
+            <div class="profile_name">
+                <p><span>1</span> Your Info</p>
+                <div class="name">
+                    <label for="name">Name : </label>
+                    <input id="name" type="text" required autofocus>
+                </div>
+                <div class="email">
+                    <label for="email"> E-mail : </label>
+                    <input id="email" type="email" required placeholder="dark@gmail.com">
+                </div>
 
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
+            </div>
 
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
+            <div class="image">
+                <img class="img1" src="images/267096_0-680x391.jpg" alt="" width="15%">
+                <img class="img3" src="images/laliga-featured-image-16x9.png.adapt.crop191x100.628p.png" alt=""
+                    width="15%">
+                <img class="img4"
+                    src="images/thumb2-fifa-world-cup-2018-logo-russia-2018-fifa-world-cup-russia-2018-soccer.jpg" alt=""
+                    width="15%">
+                <img class="img5" src="images/download.jpg" alt="" width="15%">
+            </div>
 
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
-
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
-
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
-
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
-
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
-
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
-
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-
-
-
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
-
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
-
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
-
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
-
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
-
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
-
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-
-        <div class="all">
-            <p>يرجى تقديم ملاحظاتك حول جودة موقعنا</p>
-            <label for="excellent">ممتاز</label>
-            <input type="radio" name="excellent" id="excellent" value="excellent">
-
-            <label for="veryg">جيد جدا</label>
-            <input type="radio" name="very good" id="veryg" value="very good">
-
-            <label for="good">جيد</label>
-            <input type="radio" name="good" id="good" value="good">
-
-            <label for="poor">سئ</label>
-            <input type="radio" name="poor" id="poor" value="poorS">
-        </div>
-
-
-        <textarea name="texta" id="input_a" cols="30" rows="10"></textarea>
 
 
     </section>
+
+    <div class="all">
+
+
+        <p><span>2</span> Your Feedback :</p>
+        <div class="rating">
+            <input id="excellent" type="radio" name="feedback" value="Excellent">
+            <label for="excellent">Excellent</label>
+
+            <input id="good" type="radio" name="feedback" value="Good">
+            <label for="good">Good</label>
+
+            <input id="poor" type="radio" name="feedback" value="Poor">
+            <label for="poor">Poor</label>
+        </div>
+
+        <textarea name="texta" id="input_a" cols="45" rows="9"></textarea>
+
+        <div class="submit">
+
+            <input class="sub" id="sub" type="submit">
+            <input class="res" id="res" type="reset">
+        </div>
+
+
+
+
+
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+
+
 
 </body>
 

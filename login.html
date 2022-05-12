@@ -11,7 +11,46 @@
         <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">            
     </head>
     <body>
-        <h1>login page</h1>
+        <div class="login-box">
+            <h1>تسجيل دخول</h1>
+            <div class="username-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="un" placeholder="أدخل البريد الالكتروني أو اسم المستخدم"  required style="color: white;">
+            </div>
+            <div class="pass-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="pass" placeholder="أدخل كلمة المرور" id="password" required style="color: white;">
+                <span class="pw-eye">
+                    <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                </span>
+            </div>
+            <input type="submit" value="تسجيل دخول" class="butnn1" style="color: white;">
+           
+            <br>
+            <a href="" target="_self" class="newacc">أنشئ حساب جديد من هنا</a>
+        </div>
+        <script>
+            var state= false;
+            function toggle(){
+                if(state){
+                    document.getElementById(
+                        "password").
+                        setAttribute("type" , "password");
+                        document.getElementById("eye").style.color= '#7a797e';
+                        state = false;                    
+                }
+                else{
+                    document.getElementById(
+                        "password").
+                        setAttribute("type" , "text");
+                        document.getElementById("eye").style.color= '#5887ef';
+                        state = true;    
+                }
+            }
+        </script>
+        <!-- <footer>
+            <center><h4>&copy; سنتر</h4></center>
+        </footer> -->
     </body>
 
 </html>
