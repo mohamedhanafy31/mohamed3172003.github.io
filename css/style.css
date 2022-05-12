@@ -1,0 +1,42 @@
+table {
+    width: 80%;
+    margin-right: 20px;
+    
+}
+
+caption {
+    font-size: large;
+    font-weight: 700;
+}
+
+table, caption,  th {
+    text-align: right;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+
+
+.er {
+    color: #f0f0f0;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    padding: 0.9em 2em;
+    text-align: center;
+}

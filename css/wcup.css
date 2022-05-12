@@ -19,6 +19,14 @@
     align-items: center;
   }
   
+  .logo-img {
+    position: absolute;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    color: #c7a314;
+  }
+  
   .logo {
     text-decoration: none;
     margin-top: -20px ;
@@ -31,7 +39,7 @@
   }
   
   .parts {
-    margin-left: 200px;
+    margin-left: 95px;
     margin-right: 26px;
   }
   
@@ -46,7 +54,6 @@
     font-weight: 500;
     padding-left: 13px;
     padding-right: 5px;
-    border-left: 2px solid rgb(0, 0, 0);
     transition: 0.7s ease;
   }
   
@@ -61,7 +68,7 @@
     align-content: center;
   }
   
-  .search {
+  #search {
     color: rgb(0, 0, 0);
     height: 27px;
     width: 200px;
@@ -71,7 +78,7 @@
     border-radius: 7px;
   }
   
-  .search:hover {
+  #search:hover {
     color: black;
   }
   
@@ -92,35 +99,23 @@
     transform: scale(1.1,1.1);
   }
   
-  .social-icons a {
-    color: rgba(255, 255, 255, 0.856);
-    font-size: 23px;
-    letter-spacing: 4px;
-    justify-content: center;
-    margin-top: 7px;
+  
+  
+  .sign-up {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 6px 13px;
+    margin-left: 0px;
+    margin-top: 2px;
     display: inline-block;
-    border-radius: 50%;
     transition: 0.7s ease;
   }
   
-  .social-icons a #face:hover {
-    color: 	#3b5998;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #insta:hover {
-    color: #c36ea9	;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #twit:hover {
-    color: #55acee;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #yt:hover {
-    color: #cd201f	;
-    transform: scale(1.3,1.3);
+  .sign-up:hover {
+    transform: scale(1.1, 1.1);
+    color: #cea70a;
   }
   
   .login {
@@ -129,30 +124,94 @@
     font-size: 20px;
     font-weight: 400;
     padding: 6px 13px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 2px;
     display: inline-block;
-    background-color: #cea70a;
     border-radius: 10px;
     transition: 0.7s ease;
   }
   
   .login:hover {
-    background-color: #c49e09;
     transform: scale(1.1, 1.1);
+    color: #cea70a;
   }
   
   aside {
     padding: 80px 2px;
     z-index: 998;
     width: 220px;
-    height: 100%;
+    height: 760px;
     background-color: rgb(79, 79, 79);
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: -14px;
   }
   
+  .dropdown-1 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: wheat;
+    font-size: 16px;
+    height: 100%;
+    width: 50px;
+    padding: 21px 0px;
+    font-weight: 500;
+    padding-left: 13px;
+    padding-right: 5px;
+    transition: 0.7s ease;
+  }
+  
+  .dropdown-content-1 {
+    display: none;
+    position: absolute;
+    right: -30px;
+    top: 70px;
+    background-color: rgb(60, 60, 60);
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-1:hover .dropdown-content-1 {
+    display: block;
+  }
+  
+  .dropdown-2 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    color: wheat;
+    font-size: 16px;
+    height: 100%;
+    width: 50px;
+    padding: 21px 0px;
+    font-weight: 500;
+    padding-left: 13px;
+    padding-right: 5px;
+    transition: 0.7s ease;
+  }
+  
+  .dropdown-content-2 {
+    display: none;
+    position: absolute;
+    right: -50px;
+    top: 70px;
+    background-color: rgb(60, 60, 60);
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 10px;
+    z-index: 1;
+  }
+  
+  .dropdown-2:hover .dropdown-content-2 {
+    display: block;
+  }
   
   aside ul li {
     display: block;
@@ -170,9 +229,11 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     height: 100%;
     line-height: 65px;
+    position: relative;
+    right: 30px;
   
   }
   
@@ -182,6 +243,7 @@
     transform: scale(1.1,1.1);
   }
   body {
+    /* background-image: url("bg-wc.jpg"); */
     background-color: rgb(230 230 230);
     direction: rtl;
        font-family: tajawal ;
@@ -190,7 +252,7 @@
 .titlee{
   width: 600px;
   position: relative;
-  margin-right: 50vw;
+  margin-right: 40vw;
 }
 
 .titlee h1{
@@ -205,21 +267,21 @@
 }
 .trophy{
   position:absolute ;
-  left: 255px;
+  left: 230px;
   top: 60px;
   width:95px ;
   transition-duration: 1.2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .trophy:hover{
-  width:150px;
   position:absolute ;
-  left: 220px;
-  top: 30px;
+  transform: scale(1.1 ,1.1);
+  /* box-shadow: 6px 6px 40px 10px #141414 ; */
+
 }
 .harry-kean{
   margin-right: 260px;
-  margin-top: 40px;
+  margin-top: 150px;
 
 }
 .harry-kean .top-scorer{
@@ -544,18 +606,319 @@ hr{
   color: #c49e09;
   transform: scale(1.1 ,1.1);
 }
-
-/* .side-bar{
-  background-color: #524dab;
-  width: 250px;
-  height:500px;
-  margin-right: 1250px;
-  position: fixed;
-  top: 100;
-  bottom: 0;
- 
+.side-barr ul{
+  text-decoration: none;
 }
-.all{
+
+.side-barr{
+  /* background-image: url(../BGGG.png); */
+  /* background-size: contain; */
+  z-index: 5;
+  background-color: rgba(47, 46, 46, 0.858);
+  border-radius: 7px;
+  width: 260px;
+  height:650px;
+  /* margin-right: 1250px; */
+  position: fixed;
+  top: 40px;
+  right: 1252px;
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+  text-align: justify;
+  font-size: 22px;
+  line-height: 50px;
+}
+.side-barr h4{
+  text-align: center;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.side-barr a{
+  /* font-weight: bold; */
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  background-image: url(../images/BGGG.png);
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+
+  color: rgba(255, 255, 255, 0.856);
+  padding: 5px 15px 2px 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  font-size: 17px;  
+
+}
+.side-barr a:hover{
+  color: #c49e09;
+  transform: scale(1.1 ,1.1);
+  box-shadow: 6px 6px 40px 10px #141414 ;
+}
+.top-11{
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-color: transparent #c7a314 transparent transparent;
+  border-width: 5px;
+  border-style: solid;
+}
+.best-11{
+  position: relative;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url(../images/ground.png);
+  width: 700px;
+  height:700px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+}
+.best-11 a{
+  color: rgba(255, 255, 255, 0.856);
+  background-color: #141414;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
+  text-decoration: none;
   position: absolute;
-  top: 200px;
-} */
+
+}
+.best-11 a:hover{
+  color: #c49e09;
+  transform: scale(1.1 ,1.1);
+  box-shadow: 6px 6px 40px 10px #141414 ;
+}
+.CORTOAA{
+position: absolute;
+top: 20PX;
+right: 312px;
+/* height: 50px; */
+}
+.UMTITI{
+  position: absolute;
+top: 140PX;
+right: 425px;
+}
+.KOMPANY{
+  position: absolute;
+  top: 140PX;
+  right: 200px;
+
+}
+.VERTONGEN{
+  position: absolute;
+  top: 200PX;
+  right: 35px;
+}
+.PAVARD{
+  position: absolute;
+  top: 200PX;
+  right: 590px;
+}
+.KANTE{
+  position: absolute;
+  top: 300PX;
+  right: 320px;
+}
+.MODRIC{
+  position: absolute;
+  top: 450PX;
+  right: 440px;
+}
+.DEBRUYNE{
+  position: absolute;
+  top: 450PX;
+  right: 160px;
+}
+.HAZARD{
+  position: absolute;
+  top: 570PX;
+  right: 550px;
+}
+.PERSIC{
+  position: absolute;
+  top: 570PX;
+  right: 65px;
+}
+.MBAPPE{
+  position: absolute;
+  top: 650PX;
+  right: 320px;
+}
+.title-logo{
+  position: relative;
+}
+.title-photo{
+  width: 450px;
+  position: absolute;
+  left:230px;
+  top: 90px;
+}
+.PAVARD-GOAL{
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+ 
+  border-color: transparent #c7a314 transparent transparent;
+  border-width: 4px;
+  border-style: solid;
+}
+.pavardGoal{
+  position: relative;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(110 104 104 / 50%);
+  width: 700px;
+  height:300px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+}
+.pav{
+  font-size: 20px;
+  font-weight: bold;
+}
+.frames{
+  border-radius: 8px;
+  margin-right: 30px;
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+}
+.pavard-bestGOAL{
+  width: 108px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  transition-duration: 1.1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.pavard-bestGOAL:hover{
+  width: 180px;
+  position: absolute;
+  left: 70px;
+}
+.argantin2{
+  width: 85px;
+  position: absolute;
+  right:300px;
+  bottom: 85px;
+  transform: translateX(0px);
+  transition: 1.1s;
+  transition-timing-function: ease;
+}
+.argantin2:hover{
+  box-shadow: 6px 6px 40px 10px #141414 ;
+  transform: translateX(20px);
+}
+.argan2{
+  position: absolute;
+  bottom: 50px;
+  right:308px;
+}
+.egyptwc{
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+ 
+  border-color: transparent #c7a314 transparent transparent;
+  border-width: 4px;
+  border-style: solid;
+}
+.EGY-WORLDCUP{
+  position: relative;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.7;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(110 104 104 / 50%);
+  width: 700px;
+  height:730px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+}
+.egyvs{
+  padding-top: 30px;
+}
+.EGY-WORLDCUP .uruguay{
+  width: 80px;
+  position: absolute;
+  right:300px;
+  bottom: 58PX;
+  transform: translateX(0px);
+  transition: 1.1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.EGY-WORLDCUP .russia{
+  width: 80px;
+  position: absolute;
+  right: 420px;
+  bottom: 58PX;
+  transform: translateX(0px);
+  transition: 1.1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.EGY-WORLDCUP .saudi{
+  width: 80px;
+  position: absolute;
+  right: 540px;
+  bottom: 58PX;
+  transform: translateX(0px);
+  transition: 1.1s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.uruguay:hover{
+  box-shadow: 6px 6px 40px 10px #141414 ;
+  transform: translateX(20px);
+}
+.russia:hover{
+  box-shadow: 6px 6px 40px 10px #141414 ;
+  transform: translateX(20px);
+}
+.saudi:hover{
+  box-shadow: 6px 6px 40px 10px #141414 ;
+  transform: translateX(20px);
+}
+.EGY-WORLDCUP .urug{
+  position: absolute;
+  right:308px;
+  bottom: 30PX;
+}
+.EGY-WORLDCUP .russ{
+  position: absolute;
+  right:440px;
+  bottom: 30PX;
+}
+.EGY-WORLDCUP .arab{
+  position: absolute;
+  right:548px;
+  bottom: 30PX;
+}
+footer{
+  position: relative;
+  background-color:  rgb(110, 104, 104);
+  box-shadow: 0px 2px 21px -1.46px #141414 ;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+}
+footer h4{
+  color: #c7a314;
+  font-size: 22px;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  word-spacing: 6px;
+  margin-top: 12px;
+  margin-right: 1350px;
+  /* padding: 10px; */
+}
+footer img{
+  width: 40px;
+  position: absolute;
+  left: 17px;
+  bottom: 15px;
+}

@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(60, 60, 60);
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-container-scroll {
+    position: relative;
+    overflow-x: auto;
+}
+.mm-headline{
+    margin-right: 20px;
+}
+.mw-headline{
+    margin-right: 20px;
+}
+.nn-headline{
+    padding-right: 260px;
+    margin-top: 20px;
+}
+.xx-headline{
+    margin-right: 20px;
+}
+.para-1{
+    margin-right: 300px;
+}
+.nnn-headline{
+    padding-right: 245px;
+}
+.para-2{
+    margin-right: 280px;
+}
+.mw-gallery-traditional{
+    margin-right: 300px;
+
+}
+.non-21{
+    background-position: center top;
+}
+.t-pic{
+    margin-right: 230px;
+}
+.add-imgg{
+    margin-right: 310px;
+    margin-top: 200px;
+}
+.bakr-3{
+ background-position: center;
+}
+.lea-1{
+    margin-right: 470px;
+}
+.goal-bakr{
+    margin-right: 25px;
+}

@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 *{
 box-sizing: border-box;
 margin: 0px;
@@ -6,11 +8,12 @@ box-sizing: border-box;
 text-transform: capitalize;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight:normal ;
-padding: 0;
-margin: 0;
+
+
 box-sizing: border-box;
 direction: rtl;    
 font-family: 'Tajawal', sans-serif;
+
 }
 
 header {
@@ -18,11 +21,20 @@ header {
     text-align: right;
     width: 100%;
     position: fixed;
+    top: 0px;
     z-index: 999;
     padding: 10px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  .logo-img {
+    position: absolute;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    color: #c7a314;
   }
   
   .logo {
@@ -37,7 +49,7 @@ header {
   }
   
   .parts {
-    margin-left: 200px;
+    margin-left: 95px;
     margin-right: 26px;
   }
   
@@ -52,7 +64,6 @@ header {
     font-weight: 500;
     padding-left: 13px;
     padding-right: 5px;
-    border-left: 2px solid rgb(0, 0, 0);
     transition: 0.7s ease;
   }
   
@@ -61,13 +72,79 @@ header {
     transform: scale(1.1 ,1.1);
   }
   
+  .dropdown-1 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: wheat;
+    font-size: 16px;
+    height: 100%;
+    width: 50px;
+    padding: 21px 0px;
+    font-weight: 500;
+    padding-left: 13px;
+    padding-right: 5px;
+    transition: 0.7s ease;
+  }
+  
+  .dropdown-content-1 {
+    display: none;
+    position: absolute;
+    right: -30px;
+    top: 70px;
+    background-color: rgb(60, 60, 60);
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-1:hover .dropdown-content-1 {
+    display: block;
+  }
+  
+  .dropdown-2 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    color: wheat;
+    font-size: 16px;
+    height: 100%;
+    width: 50px;
+    padding: 21px 0px;
+    font-weight: 500;
+    padding-left: 13px;
+    padding-right: 5px;
+    transition: 0.7s ease;
+  }
+  
+  .dropdown-content-2 {
+    display: none;
+    position: absolute;
+    right: -50px;
+    top: 70px;
+    background-color: rgb(60, 60, 60);
+    width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 10px;
+    z-index: 1;
+  }
+  
+  .dropdown-2:hover .dropdown-content-2 {
+    display: block;
+  }
+
   nav {
     display: flex;
     justify-content: center;
     align-content: center;
   }
   
-  .search {
+  #search {
     color: rgb(0, 0, 0);
     height: 27px;
     width: 200px;
@@ -77,7 +154,7 @@ header {
     border-radius: 7px;
   }
   
-  .search:hover {
+  #search:hover {
     color: black;
   }
   
@@ -98,35 +175,23 @@ header {
     transform: scale(1.1,1.1);
   }
   
-  .social-icons a {
-    color: rgba(255, 255, 255, 0.856);
-    font-size: 23px;
-    letter-spacing: 4px;
-    justify-content: center;
-    margin-top: 7px;
+  
+  
+  .sign-up {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 6px 13px;
+    margin-left: 0px;
+    margin-top: 2px;
     display: inline-block;
-    border-radius: 50%;
     transition: 0.7s ease;
   }
   
-  .social-icons a #face:hover {
-    color: 	#3b5998;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #insta:hover {
-    color: #c36ea9	;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #twit:hover {
-    color: #55acee;
-    transform: scale(1.3,1.3);
-  }
-  
-  .social-icons a #yt:hover {
-    color: #cd201f	;
-    transform: scale(1.3,1.3);
+  .sign-up:hover {
+    transform: scale(1.1, 1.1);
+    color: #cea70a;
   }
   
   .login {
@@ -135,26 +200,25 @@ header {
     font-size: 20px;
     font-weight: 400;
     padding: 6px 13px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 2px;
     display: inline-block;
-    background-color: #cea70a;
     border-radius: 10px;
     transition: 0.7s ease;
   }
   
   .login:hover {
-    background-color: #c49e09;
     transform: scale(1.1, 1.1);
+    color: #cea70a;
   }
   
   aside {
     padding: 80px 2px;
     z-index: 998;
     width: 220px;
-    height: 100%;
+    height: 760px;
     background-color: rgb(79, 79, 79);
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: -14px;
   }
@@ -166,6 +230,7 @@ header {
     box-sizing: border-box;
     border-top: solid 1px rgba(26, 25, 25, 0.1);
     border-bottom: solid 1px rgb(26, 25, 25);
+  
   }
   
   aside ul li a {
@@ -175,9 +240,11 @@ header {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     height: 100%;
     line-height: 65px;
+    position: relative;
+    right: 30px;
   
   }
   
@@ -186,32 +253,45 @@ header {
     padding-right: 13px;
     transform: scale(1.1,1.1);
   }
-  
-  .bg {
-    background-color: rgb(230, 230, 230);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
-#h1{
+
+/* #h1{
 background-color: rgb(145, 221, 211);
 background-image: linear-gradient(to right,rgb(225, 233, 179),rgb(203, 198, 47));
-width: 100%;
-height:25%;
+/* width: 70%;
+height:10%;
 color:black;
+display: flex;
 padding: 20px;
-margin:20px;
+margin:68px 300px 30px 300px;
 text-align: center;
+align-self: center;
+
 font-size:30px;
 text-shadow: 1px 3px 10px #f5b11c;
-}
+position: absolute;
+right:100px; */
+/* left:45%; */
+/* 
 #h1:hover{
     color:red;
     text-shadow: 1px 3px 10px green;
+} */
+.today{
+position: relative;
+top:80px;
+width:80%;
+font-size: 35px;
+font-family: 'Reem Kufi', sans-serif;
+color: #f8b500;
+right:850px;
+}
+.today:hover{
+    color:red;
+text-shadow: 1px 3px 10px green;
 }
 main{
 height:650px;
-width:100%;
+width:80%;
 background-color: white;
 
 }
@@ -228,6 +308,9 @@ font-size: 30px;
 margin-top: 10px;
 margin-top: 10px;
 text-shadow: 1px 3px 10px #f5b11c;
+position: relative;
+right:238px;
+top:80px;
 }
 .tt{
 color:blue;
@@ -237,10 +320,12 @@ margin :10px;
 padding: 20px;
 font-size: 30px;
 width:300px;
-height:110px;
+height:72px;
 align-content: center;
-position: relative;
-left: 560px;
+position: absolute;
+left: 894px;
+top:129px;
+
 }
 .tt:hover{
     color:red;
@@ -249,17 +334,19 @@ left: 560px;
 .kimo{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width:75%;
     height:150px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
-margin-top:5px;
+border: 3px solid rgb(57, 99, 119);
+margin-top:98px;
+border-radius: 10px;
 padding-top: 10px;
+position: relative;
+right: 350px;
+top:70px;
 
 /* justify-content: left; */
 }
@@ -267,7 +354,14 @@ padding-top: 10px;
     align-self: center;
     text-align: center;
     position: absolute;
-    right: 63px;
+    right: 134px;
+}
+.mk{
+position: relative;
+width:54px;
+height:37%;
+top:45px;
+right:4px;
 }
 
 
@@ -275,65 +369,86 @@ padding-top: 10px;
     align-self: center;
     text-align: center;
     position: absolute;
-    left: 66px;
+    left: 36px;
+}
+.py{
+position: relative;
+width:70px;
+height:37%;
+top:40px;
+right:980px;
 }
 .ee{
-    
-    position:relative;
-    left: 34%;
-top: 6px;
+    position:absolute;
+    left: 37%;
+top: 55px;
     text-align: center;
 }
 .ee:hover{
-color:red
+color:red;
 }
 .yy{
-
-    
-    position: relative;
-  left:15%;
+    position:absolute;
+  left:39%;
     text-align: center;
 }
 .re{
     text-align: center bottom;
-    position: relative;
-    left:5%;
-    top: 80px;
+    position: absolute;
+    left:38%;
+    top: 97px;
 
 }
 .oo{
 box-shadow: 5px 10px 20px  gold ;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:160px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
-margin-top:5px;
+border: 3px solid rgb(118, 118, 118);
+margin-top:22px;
 padding-top: 10px;
+position: relative;
+right: 350px;
+top:69px;
+border-radius: 10px;
 }
 .h2{
 text-align: center;
 align-self: center;
 position: absolute;
-left:80px;
+left:31px;
+top:27px;
+}
+.xx{
+position: relative;
+left:251px;
+top:15px;
+
+
 }
 .h3{
     text-align: center;
     align-self: center;
     position: absolute;
-    right: 56px;
+    right: 140px;
+}
+.aa{
+position: absolute;
+right:200px;
+top:54px;
+
+
 }
 .h4{
 position: relative;
 text-align: center;
 align-self: center;
-left: 40%;
-top: 3px;
+left:-43%;
+top: -5px;
 }
 .h4:hover{
     color:red
@@ -347,45 +462,61 @@ top: 3px;
 .qz{
     text-align: center bottom;
     position: relative;
-    left:25%;
+    left:-28%;
     top: 90px;
 }
 
 .kk{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:160px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
+border: 3px solid rgb(57, 99, 119);
+border-radius: 10px;
 margin-top:5px;
 padding-top: 10px;
+position: relative;
+right: 350px;
+top:88px;
 }
 .p1{
 
     text-align: center;
     align-self: center;
     position: absolute;
-    left:80px;
-
+    left:85px;
+}
+.xs{
+position: relative;
+right:80%;
+top:44px;
+height:34%;
+width:53px;
 
 }
 .p2{
     text-align: center;
     align-self: center;
     position: absolute;
-    right: 65px;
-    bottom: 33px;
+    right: 117px;
+    bottom: 59px;
+}
+.vc{
+position: relative;
+left:-7px;
+top:44px;
+height: 34%;
+width: 53px;
+
 }
 .p3{
-position: relative;
-left:43%;
-top:18px; 
+position:absolute;
+left:41%;
+top:46px; 
 }
 .p3:hover{
     color:red
@@ -393,27 +524,27 @@ top:18px;
 
 
 .uy{
-    position:relative;
-    top:2px;
-    left: 31%;
+    position:absolute;
+    top:0px;
+    left: 38%;
     text-align: center;
 }
 .qq{
 
 
     text-align: center bottom;
-    position: relative;
-    left:21%;
-    top: 85px;
+    position: absolute;
+    left:38%;
+    top: 95px;
 }
 /* دورى ابطال افريقيا */
-
-
 .wc{
     border-bottom: 4px solid #f5b11c;
     padding: 0 0 10px;
     display: inline-block;
     position: relative;
+    right:261px;
+    top:98px;
     min-height: 52px;
     float: right;
     box-sizing: border-box;
@@ -428,41 +559,58 @@ top:18px;
 
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 60%;
     height:190px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
+border: 3px solid rgb(57, 99, 119);
 margin-top:5px;
+border-radius: 10px;
 padding-top: 10px;
+position: absolute;
+right: 349px;
+top:832px;
 }
 .pp{
 
     text-align: center;
     align-self: center;
     position: absolute;
-    left:80px;
-bottom: -183px;
+    left:27px;
+bottom: 92px;
 
+}
+.cv{
+    position: absolute;
+    height: 39%;
+    width:70px;
+    right:918px;
+    top:36px;
 }
 .aa{
     text-align: center;
     align-self: center;
     position:absolute;
-    right: 60px;
-    bottom: -183px;
+    right: 84px;
+    bottom:110px;
+}
+.dy{
+width:70px;
+height:34%;
+position: absolute;
+top:40px;
+right:10px;
+
 }
 .ka{
 
     text-align: center;
     align-self: center;
-    left:45%;
+    left:44%;
     position: absolute;
-    bottom: -209px;
+    bottom: 85px;
     background-color: #f5b11c;
     width: auto;
     height:auto;
@@ -473,41 +621,43 @@ border-radius: 10px;
     text-align: center;
     align-self: center;
     position: absolute;
-    left:45%;
-    bottom: -167px;
+    left:44%;
+    bottom: 133px;
 }
 .sh{
 position: absolute;
-right: 44px;
-bottom: -261px;
+right: 545px;
+bottom: 15px;
 }
 .po{
 position: absolute;
 text-align: center;
 align-self: center;
-left:630px;
-bottom:-262px;
+left:842px;
+bottom:14px;
 }
 .uu{
 
     position: absolute;
     text-align: center;
     align-self: center;
-left:72px;
-bottom: -262px;
+left:50px;
+bottom: 20px;
 } 
  .we{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:190px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
+position: relative;
+right: 350px;
+top:336px;
+border: 3px solid rgb(57, 99, 119);
+border-radius: 10px;
 margin-top:5px;
 padding-top: 10px; 
  }
@@ -517,31 +667,48 @@ padding-top: 10px;
     text-align: center;
     align-self: center;
     position:relative;
-    left:70px;
+    left:-115px;
     bottom: 40px;
+ }
+ .lg{
+position: relative;
+height:38%;
+width: 70px;
+top:10px;
+right:-134px;
+
  }
  .ty{
     text-align: center;
     align-self: center;
     position:absolute;
-right: 60px;
-bottom: -387px;
+right: 1001px;
+bottom: 105px;
+ }
+ .wm{
+position: absolute;
+width:68px;
+height:34%;
+top:29px;
+right:900px;
+
+
  }
  .pl{
 
     text-align: center;
     align-self: center;
     position: absolute;
-    left:45%;
-bottom: -370px;
+    left:44%;
+bottom: 128px;
  }
  .gf{
 
     text-align: center;
     align-self: center;
-    left:45%;
+    left:43%;
     position: absolute;
-    bottom: -413px;
+    bottom: 81px;
     background-color: #f5b11c;
     width: auto;
     height:auto;
@@ -549,61 +716,82 @@ border-radius: 10px;
  }
  .gl{
 position: absolute;
-right:44px;
-bottom: -465px;
+right:522px;
+bottom: 23px;
  }
  .fl{
 
     position: relative;
     text-align: center;
     align-self: center;
-left:500px;
-top:30px;
+left:54px;
+top:41px;
  }
  .kl{
 
     position: relative;
     text-align: center;
     align-self: center;
-left:-187px;
-bottom: -23px;
+left:-594px;
+bottom: -36px;
  }
 .hd{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:190px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
-margin-top:5px;
+position: relative;
+right: 350px;
+top:336px;
+border: 3px solid rgb(57, 99, 119);
+border-radius: 10px;
+margin-top:19px;
 padding-top: 10px; 
+}
+.eb{
+position: absolute;
+height:34%;
+width:68px;
+top:33px;
+right:15px;
+
+
 }
 .you{
     text-align: center ;
     align-self: center ;
     position:relative;
-left:78px;
+left:-103px;
 top:-35px ;
 }
+
 .se{
     text-align: center ;
     align-self: center ;
     position:relative  ;
-    right:-1230px;
+    right:904px;
 top:-39px;
+}
+.do{
+position: absolute;
+height:34%;
+width:68px;
+right:950px;
+top:22px;
+
+
 }
 .bin{
     text-align: center;
     align-self: center;
     left:45%;
     position: relative;
-top:-35px;
-left:500px;
+top:-31px;
+left:-345px;
 background-color: #f5b11c;
 width: auto;
 height:auto;
@@ -613,36 +801,34 @@ border-radius: 10px;
     text-align: center;
     align-self: center;
     position: relative;
-left:410px;
+left:-229px;
 top:-75px;
 }
 .ca{
     position: absolute;
-    right:59px;
-    bottom: -680px;
+    right:547px;
+    bottom: 29px;
 }
 .var{
 position: relative;
-left:20%;
+left:23%;
 top:98px;
 }
 .fan{
 position: relative;
-left:-420px;
+left:-290px;
 top:95px;
 }
-.tea{
-    background-color: rgb(145, 221, 211);
-    background-image: linear-gradient(to right,rgb(225, 233, 179),rgb(203, 198, 47));
-    width: 100%;
-    height:10%;
-    color:black;
-    padding: 20px;
-    margin:20px;
-    text-align: center;
-    font-size:30px;
+ .tea{
 position: relative;
-left:-30px;
+top:350px;
+right:850px;
+
+width:80%;
+font-size: 35px;
+font-family: 'Reem Kufi', sans-serif;
+color: #f8b500;
+margin-bottom: 20px;
 }
 .tea:hover{
     color:red;
@@ -653,6 +839,8 @@ text-shadow: 1px 3px 10px green;
     padding: 0 0 10px;
     display: inline-block;
     position: relative;
+    right:261px;
+    top:273px;
     min-height: 52px;
     float: right;
     box-sizing: border-box;
@@ -670,12 +858,13 @@ text-shadow: 1px 3px 10px green;
     margin :10px;
     padding: 20px;
     font-size: 30px;
-    width:300px;
-    height:110px;
+    width:274px;
+    height:80px;
     align-content: center;
-    position: relative;
-    left: 560px;
-}
+    position: absolute;
+    left: 910px;
+    top:1530px;
+} 
 .jo:hover{
     color:red;
     background-image:linear-gradient(to right,#fceabb,#f8b500) ;
@@ -684,38 +873,54 @@ text-shadow: 1px 3px 10px green;
 .red{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:190px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
-margin-top:5px;
+position: relative;
+right: 170px;
+border: 3px solid rgb(57, 99, 119);
+border-radius: 10px;
+margin-top:9px;
 padding-top: 10px; 
+top:457px;
 }
 .saw{
 position: relative;
 text-align: center;
 align-self: center;
-left :70px;
+left :-142px;
 top:-30px;
 }
+.yb{
+position: absolute;
+height:34%;
+width:68px;
+right:65px;
+top:34px;
+}
 .raw{
-position: relative;
+position: absolute;
 display: flex;
-left:1180px;
-top:-30px;
+left:71px;
+top:40px;
 text-align: center;
 align-self: center;
+}
+.ct{
+    position: absolute;
+    height:34%;
+    width:68px;
+right:964px;
+top:32px;
 }
 .dar{
     text-align: center;
     align-self: center;
     position: relative;
-left:450px;
+left:-396px;
 top:-68px;
 }
 .kp{
@@ -723,7 +928,7 @@ top:-68px;
     align-self: center;
     left:45%;
     position: relative;
-left:308px;
+left:-223px;
 top:-20px;
 background-color: #f5b11c;
 width: auto;
@@ -737,51 +942,69 @@ border-radius: 10px;
 }
 .jh{
     position: relative;
-    left:9%;
+    left:33%;
     top:110px;
 }
 .ol{
 position: relative;
-left:40%;
+left:17%;
 top:110px;
 }
 .how{
 position: relative;
-right:52%;
+right:2%;
 top:110px;
 }
 .egy{
     box-shadow: 5px 10px 20px  gold;
     background-color: rgba(226, 216, 216, 0.625);
-    width: 100%;
+    width: 75%;
     height:190px;
     display: flex;
 font-size: 30px;
 color:black;
 text-align: center;
-
-border: 8px solid rgb(57, 99, 119);
-border-style: double;
-margin-top:5px;
+position: relative;
+right:360px;
+border: 3px solid rgb(57, 99, 119);
+border-radius: 10px;
+margin-top:19px;
 padding-top: 10px; 
+top:473px;
 }
 .tv{
 text-align: center;
 align-self: center;
 position: relative;
-left:90px;
-top:-30px;
+left:-165px;
+top:-33px;
+}
+.bd{
+position: absolute;
+height:34%;
+width:66px;
+right:66px;
+top:25px;
+
+
 }
 .bv{
     position: relative;
-    left:82%;
-    top:40px;
+    left: -73%;
+    top:31px;
+}
+.ph{
+    position: absolute;
+    height:34%;
+    width:68px;
+right:950px;
+top:35px;
 }
 .dc{
     text-align: center;
     align-self: center;
     position: relative;
-left:470px;
+left:-337px;
 top:-62px;
 }
 .xo{
@@ -789,8 +1012,8 @@ top:-62px;
     align-self: center;
     left:45%;
     position: relative;
-left:285px;
-top:-20px;
+left:-169px;
+top:-15px;
 background-color: #f5b11c;
 width: auto;
 height:auto;
@@ -802,16 +1025,16 @@ border-radius: 10px;
 }
 .xp{
     position: relative;
-    left:47%;
+    left:5%;
     top:110px;
 }
 .zx{
     position: relative;
-    right:7%;
+    right:-55%;
     top:110px;
 }
 .za{
     position: relative;
-    right:57%;
-    top:110px;
+    right:-5%;
+    top:117px;
 }
